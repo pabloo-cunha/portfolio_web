@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif; /*fonte*/
+    margin: 0;
+    padding: 0;
+    background-color: #000; /*cor de fundo*/
+    box-sizing: border-box; /*faz com que o padding e a borda não aumentem o tamanho do elemento*/
+    color: #fff;
+}
+
+header {
+    background-color: #333; /*cor de fundo*/
+    color: #fff; /*cor do texto*/
+    padding: 10px 0; 
+    display: flex; /*faz com que os elementos fiquem em linha*/
+    flex-direction: column; 
+    justify-content: flex-end; /*alinha o conteúdo no final do header*/
+    text-align: center ; /*alinha o texto no centro*/
+    list-style: none; 
+    height: 250px; /*altura do header*/
+    background-image: url('images/logo.jpg'); /*imagem de fundo*/
+    background-size: cover; /*redimensiona a imagem para cobrir o container*/
+    background-position: center; /*posiciona a imagem no centro*/
+    background-repeat: no-repeat; /*não repete a imagem*/
+}
+
+
+nav ul {
+    list-style: none; /*remove a bolinha da lista*/
+    padding: 0;
+    margin: 0;
+    display: block; 
+}
+
+nav ul li {
+    display: inline; /*alinha os itens na mesma linha*/
+    margin-right: 10px; /*espaçamento entre os itens*/
+}
+
+nav ul li a {
+    color: #fff; /*cor do texto*/
+    text-decoration: none; /*remove o sublinhado do link*/
+    background-color: rgba(0,0,0,0.8); /*cor de fundo do link*/
+    padding: 10px 20px; /*espaçamento interno*/
+    border-radius: 5px; /*bordas arredondadas*/
+    border: 1px solid #9b59b6;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #9b59b6;
+    color: #ccc; /*cor do texto ao passar o mouse*/
+}
+
+section {
+    padding: 2rem;
+    background-color: #1a1a1a; /*cor de fundo*/
+    border: 1px solid #9b59b6;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+#sobre p {
+    text-align: justify;
+
+    /* text-justify: auto; */
+}
+
+h2 {
+    color: #9b59b6;
+}
+
+footer {
+    background-color: #333; /* Fundo cinza escuro */
+    color: #fff; /* Texto branco */
+    text-align: center;
+    padding: 1rem;
+    position: fixed; /* Fixa o rodapé no final da página */
+    width: 100%; /* Largura total */
+    bottom: 0;
+}
