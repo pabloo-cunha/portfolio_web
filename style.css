@@ -83,3 +83,17 @@ footer {
     width: 500px;
     border-radius: 8px;
 }
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Alinha os itens de navegação em coluna */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Espaçamento entre os itens na vertical */
+    }
+
+    .projeto img {
+        width: 100%; /* Ajusta a largura da imagem para 100% do contêiner pai */
+    }
+}
